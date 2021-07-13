@@ -1020,3 +1020,26 @@ height: 120vh;
     cursor: pointer;
     letter-spacing: 2px;
 }
+
+
+
+.footer-2{
+    margin-top: 2rem;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col>p{
+    font-family: 'Futura-Bold';
+    font-size: 1.5em;
+    color: rgb(56, 56, 56);
+}
+ 
+.footer-col{
+    text-align: left;
+}
+.footer-ul{
+    list-style: none;
+}
