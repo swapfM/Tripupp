@@ -51,6 +51,8 @@ body{
     src: url(./assets/fonts/Muli-Light.ttf);
 }
 
+
+
 .header{
     position: absolute;
     top:0;
@@ -1025,7 +1027,7 @@ height: 120vh;
 
 .footer-2{
     margin-top: 2rem;
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -1042,4 +1044,26 @@ height: 120vh;
 }
 .footer-ul{
     list-style: none;
+    padding-left: 0;
+    margin-bottom: 100px;
 }
+
+.footer-li{
+    margin-left: 0;
+    font-family: 'Muli-Regular';
+    font-size: 1.7em;
+    line-height: 2em;
+    color: rgb(75, 75, 75);
+   
+}
+
+.footer-li:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.footer-col>p:not(:first-child){
+
+    margin: 3em 0;
+}
+
