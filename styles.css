@@ -13,7 +13,17 @@ body{
     src: url(./assets/fonts/FootlightMTProLight.otf);
   }
 
+@font-face {
+    font-family: 'Carisma-R';
+    src: url(./assets/fonts/CarismaClassic-Regular.ttf);
+         
+}
 
+
+@font-face {
+    font-family: 'Carisma-M';
+    src: url(./assets/fonts/CarismaClassic-500Medium.ttf);
+}
 
 @font-face {
     font-family: 'Muli-SB';
@@ -934,7 +944,7 @@ height: 120vh;
 
 .why-wrap-col{
 
-    max-width: 15%;
+    max-width: 16%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 2em 1.5em;
     background: white;
@@ -953,17 +963,19 @@ height: 120vh;
 }
 
 .wrap-col-p1{
-    margin-top: 0;
+    margin-top: 0.5em;
     font-family: 'Futura-Bold';
     color: rgb(85, 85, 85);
     line-height: 50px;
-    font-size: 2em;
+    font-size: 2.1em;
+    margin-bottom: 0.5em;
 }
 
 .wrap-col-p2{
 
-    font-family: 'Futura-Book';
+    font-family: 'Carisma-M';
+   
     color: rgb(134, 134, 134);
     font-size: 1.8em;
-    line-height: 50px;
+    line-height: 40px;
 }
