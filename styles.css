@@ -32,6 +32,12 @@ body{
 }
 
 @font-face {
+    font-family: 'Muli-B';
+    src: url(./assets/fonts/Muli-Bold.ttf);
+}
+
+
+@font-face {
     font-family: 'Futura-Book';
     src: url(./assets/fonts/Futura-SC-T-OT-Book_19037.ttf);
 }
@@ -790,7 +796,8 @@ body{
 .payroll{
 
 width: 100%;
-height: 120vh;
+position: relative;
+height: 300vh;
 
 }
 
@@ -846,8 +853,7 @@ height: 120vh;
     text-align: center;
     max-width: 90%;
 
-    margin-bottom: 0em;
-    
+    margin-bottom: 10em;
 }
 
 .thi-cont-inner{
@@ -875,13 +881,314 @@ height: 120vh;
     color: #2ca7cc;
 }
 
+
+.benefits{
+    width: 100vw;
+    height: 140vh;
+    border:30px solid;
+    border-image:linear-gradient(100deg,rgb(248, 48, 255),blue) 10;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    background: #0013bb;
+    left: -10%;
+    overflow: hidden;
+   transform: skewY(-7deg);
+   
+}
+
+
+.bene-inner{
+
+    width: 90%;
+    margin-left: 9%;
+    border-left: 3px dotted rgb(47, 0, 255);
+    height: 100%;
+    transform: skewY(7deg);
+    margin-top: 6rem;
+}
+
+
+.bene-inner>i{
+
+    position: absolute;
+    font-size: 4em;
+     color: rgb(109, 229, 250);
+     top: 1.4em;
+     left: -0.4em;
+}
+
+.bene-wrap{
+
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+.bene-col-l{
+
+    width: 30% !important;
+    padding:2em 3em;
+    background: white;
+    border-radius: 20px;
+    max-height: 93vh;
+    text-align: left;
+    display: block;
+    box-shadow: rgb(255, 234, 173) 0px 3px 8px;
+}
+
+
+.bene-col-l>h2{
+
+    font-family: 'Futura-Bold';
+    font-size: 2.5em;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.bene-col-l>p{
+    margin-top: 16px;
+    line-height: 40px;
+    font-family: 'Muli-SB';
+    font-size: 1.8em;
+    color: rgb(68, 68, 68);
+}
+
+.hr-bene-l{
+
+    margin: 2em 0;
+    width: 90%;
+    
+}
+
+.hr-bene-l1{
+
+   border: 7px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    
+}
+
+.hr-bene-l2{
+    
+    border: 7px solid rgb(230, 230, 230);
+    width: 60%;
+    margin-left: 0;
+    
+     border-radius: 10px;
+ }
+ 
+ 
+.bene-l-bot{
+    margin-top: 3rem;
+    width: 95%;
+  
+    border: 7px solid rgb(255, 166, 0);
+    border-radius: 10px;
+    padding-bottom: 0rem;
+  
+}
+
+.bene-l-bot>h1{
+
+   float: right;
+   margin:2rem;
+   font-size: 40px;
+   color: rgb(255, 166, 0);
+ 
+}
+.bene-l-bot-inner{
+    display: block;
+    padding:3em;
+}
+
+.bene-l-bot-inner>p{
+
+    font-family: 'Muli-SB';
+    font-size: 2em;
+    margin-bottom: 0rem;
+}
+
+.bene-l-bot-hr{
+  
+    border: 7px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 0;
+
+}
+
+.bene-l-bot-inner>h1{
+    margin-top: 0;
+    font-family: 'Cardo',serif;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+
+.bene-col-l:hover{
+    transform: scale(1.03);
+}
+
+.bene-col-r{
+    width: 55%;
+}
+
+.bene-col-r-f{
+
+    width: 65%;
+    background: linear-gradient(90deg, #fff3cd, #ff9d77);
+    height: 310px;
+    padding: 2em 3em;
+    border-radius: 20px;
+}
+
+.bene-col-r-f-t{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bene-col-r-f-t>p:first-child{
+
+    font-family: 'Futura-Bold';
+    font-size: 2em;
+    margin:0;
+    color: rgb(112, 112, 112);
+}
+
+.bene-col-r-f-t>p:nth-child(2){
+
+    font-family: 'Muli-SB';
+    font-size: 2em;
+    margin: 0;
+    color: white;
+}
+
+
+.card-no-wrap{
+
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Cardo',serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.card-no-wrap>p{
+
+    margin: 0;
+}
+
+.card-date-wrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0;
+}
+
+.card-sp>p{
+
+    display: inline;
+}
+
+.card-date-wrap>p{
+
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Cardo';
+  color: rgb(128, 128, 128);
+}
+
+.card-sp{
+
+    font-family: 'Muli-Regular';
+    font-size: 1.1rem;
+    color: rgb(134, 134, 134);
+}
+
+
+
+.card-sp-2{
+    margin-left: 1rem;
+    font-family: 'Muli-B';
+    letter-spacing: 2px;
+    font-size: 1.8rem !important;
+}
+
+.card-sp-1{
+
+    font-size:0.8rem;
+    font-family: 'Muli-Light';
+    margin:0;
+    line-height:0;
+    padding:0;
+}
+
+.card-name-wrap{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-name-wrap>h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.circ-cont{
+
+    margin: auto;
+    margin-right: 0;
+}
+
+.circ1, .circ2{
+    width:55px;
+    height: 55px;
+    background-color: rgb(255, 136, 0);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circ2{
+    margin-left: -25px;
+    background: rgba(255, 217, 0, 0.6);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .thi-bot{
-    margin-top: 2rem;
+    
    margin: auto;
     display: flex;
     justify-content: space-between;
     width: 90%;
     padding-bottom: 5em;
+    margin-top: 180vh;
 }
 
 .thi-bot-l{
@@ -1005,7 +1312,7 @@ height: 120vh;
 .footer-1>p{
     font-family: 'Cardo',serif;
     font-size: 3.5em;
-    color: #263bf7;
+    color: #0016d8;
     line-height: 1.5em;
   
 }
@@ -1013,7 +1320,7 @@ height: 120vh;
 .footer-1>button{
     width: 100%;
     padding: 1.5em 3em;
-    background: linear-gradient( to right, rgb(255, 83, 246), rgb(169, 20, 255));
+    background: linear-gradient( to right, rgb(255, 83, 246), rgb(149, 4, 233));
     font-size: 2em;
     font-family: 'Futura-Bold';
     color: white;
@@ -1034,6 +1341,7 @@ height: 120vh;
 }
 
 .footer-col>p{
+    
     font-family: 'Futura-Bold';
     font-size: 1.5em;
     color: rgb(56, 56, 56);
