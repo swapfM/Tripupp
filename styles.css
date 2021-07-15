@@ -7,6 +7,7 @@ body{
     padding:0;
     box-sizing: border-box;
    
+   
 }
 
 @font-face {
@@ -502,6 +503,7 @@ body{
     background: #c7ddfa;
     height: 120vh;
     padding-bottom: 4rem;
+    overflow: hidden;
 }
 
 .sec-inner{
@@ -961,6 +963,7 @@ height: auto;
     text-align: left;
     display: block;
     box-shadow: rgb(255, 234, 173) 0px 3px 8px;
+    overflow: hidden;
 }
 
 
@@ -1284,34 +1287,6 @@ height: auto;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .thi-bot{
     
    margin: auto;
@@ -1505,4 +1480,3 @@ height: auto;
 
     margin: 3em 0;
 }
-
