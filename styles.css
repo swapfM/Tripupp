@@ -2,11 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Source+Serif+Pro:wght@600&display=swap');
 
+
+html{
+    min-width: 75rem;
+}
+
+
 body{
     margin:0;
     padding:0;
     box-sizing: border-box;
-   
    
 }
 
@@ -78,6 +83,7 @@ body{
     right: 0;
     width: 100%;
     background:none;
+    min-width: 75rem;
 }
 
 .header-cont{
@@ -161,7 +167,7 @@ body{
     position: absolute;
     width: 100%;
     z-index: -1;
-    
+   
     background: linear-gradient(100deg, #f640fc , #4a8de6);
     transform: skewY(-12deg);
     transform-origin: 0 100%;
@@ -209,9 +215,10 @@ body{
     margin:0;
     font-family: 'FootlightL';
     text-transform: capitalize;
-    font-size: 4.5em;
+    font-size: calc(2em + 2vmin);
     letter-spacing: 2px;
     color: white;
+    max-width: 650px;
 }
 
 .form-span{
@@ -219,10 +226,12 @@ body{
     background: rgba(187, 187, 187, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    padding: 0.5em 1.5em;
+    padding: 0.5em 1em;
     padding-right: 0.5em;
     vertical-align: middle;
     margin-bottom: 2rem;
+    max-width: 600px;
+    min-width: 400px;
    
 }
 
@@ -243,22 +252,21 @@ body{
     background: transparent;
     border: none;
     font-family: 'Futura-bold';
-    font-size: 1.3em;
+    font-size: calc(0.6em + 1vmin);
     letter-spacing: 1px;
     outline: none;
-    
+    max-width: 250px;
     padding-right: 1em;
 }
 
 .mail-btn{
     font-family: 'Futura-Bold';
-    font-size: 1.2em;
-    padding: 20px 16px;
+    font-size: calc(0.5em + 1vmin);
+    padding: 20px 12px;
     background: rgb(73, 73, 255);
     color:white;
     border-radius: 10px;
     border: none;
-    float:right;
     cursor: pointer;
     transition: 0.3s ease-out;
 }
@@ -273,8 +281,10 @@ body{
     font-family: 'Muli-Regular';
     color: rgb(107, 107, 107);
     line-height: 1.6em;
-    font-size: 1.5em;
+    font-size: calc(0.8em + 1vmin);
     letter-spacing: 2px;
+    min-width: 200px;
+    max-width: 600px;
 }
 
 .firstover-cont2{
